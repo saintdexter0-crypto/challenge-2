@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCourse - Timetable</title>
+  <link rel="stylesheet" href="./timetable.css">
+  <link rel="icon" href="./image/secure_course_icon.png">
+</head>
+
+<body>
+  <!-- main container -->
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./image/secure_course_logo.png" alt="logo">
+        </div>
+        <h2>SecureCourse</h2>
+      </div>
+      <!-- side bar -->
+      <nav class="sidebar-nav">
+        <a href="./dashboard.html" class="nav-item">
+          <span class="icon"><img src="./image/symbols_dashboard.png" alt=""></span> Dashboard
+        </a>
+        <a href="./profile.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile
+        </a>
+        <a href="./registration.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_register-outline.png" alt=""></span> Registration
+        </a>
+        <a href="./timetable.html" class="nav-item active">
+          <span class="icon"><img src="./image/timetable.png" alt=""></span> Timetable
+        </a>
+        <a href="./attendance.html" class="nav-item">
+          <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
+        </a>
+      </nav>
+    </aside>
+    <!-- main content -->
+    <main class="main-content">
+      <header class="topbar">
+        <button class="hamburger-btn">☰</button>
+        <div class="spacer"></div>
+        <div class="user-profile-section">
+          <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
+          <div class="profile-menu">
+            <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
+            <div class="profile-info">
+              <span class="name">Kelvin Yeboah</span>
+              <span class="role">Student</span>
+            </div>
+            <span class="dropdown-arrow">⌄</span>
+            <div class="dropdown-content">
+              <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
+              <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
+              <div class="divider"></div>
+              <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <h1 class="page-title">Timetable</h1>
+
+        <div class="timetable-grid">
+
+          <section class="card schedule-main">
+            <div class="date-selector">
+              <div class="date-item"><span>13</span><small>Mon</small></div>
+              <div class="date-item"><span>14</span><small>Tue</small></div>
+              <div class="date-item"><span>15</span><small>Wed</small></div>
+              <div class="date-item active"><span>16</span><small>Thu</small></div>
+              <div class="date-item"><span>17</span><small>Fri</small></div>
+              <div class="date-item"><span>18</span><small>Sat</small></div>
+              <div class="date-item"><span>19</span><small>Sun</small></div>
+            </div>
+
+            <h2 class="sub-section-title">Classes</h2>
+
+            <div class="class-list">
+              <div class="class-card purple">
+                <div class="class-info">
+                  <span class="course-code">CS 162</span>
+                  <h3 class="course-title">Circuit Theory</h3>
+                  <p class="location">SF 13</p>
+                </div>
+                <div class="class-time">8:00 AM</div>
+              </div>
+
+              <div class="class-card blue">
+                <div class="class-info">
+                  <span class="course-code">CS 162</span>
+                  <h3 class="course-title">Circuit Theory</h3>
+                  <p class="location">SF 13</p>
+                </div>
+                <div class="class-time">10:30 AM</div>
+              </div>
+
+              <div class="class-card lime">
+                <div class="class-info">
+                  <span class="course-code">CS 162</span>
+                  <h3 class="course-title">Circuit Theory</h3>
+                  <p class="location">SF 13</p>
+                </div>
+                <div class="class-time-group">
+                  <div class="class-time">01:00 PM</div>
+                  <span class="status-tag">Postponed</span>
+                </div>
+              </div>
+
+              <div class="class-card orange">
+                <div class="class-info">
+                  <span class="course-code">CS 162</span>
+                  <h3 class="course-title">Circuit Theory</h3>
+                  <p class="location">SF 13</p>
+                </div>
+                <div class="class-time">02:00 PM</div>
+              </div>
+            </div>
+          </section>
+
+          <div class="side-panel">
+            <div class="calendar-widget">
+              <div class="calendar-header">
+                <img src="image/back arrow.png" alt="">
+                <h3>May</h3>
+                <img src="image/front arrow.png" alt="">
+              </div>
+              <div class="calendar-days">
+                <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span
+                  class="weekend">S</span><span class="weekend">S</span>
+                <span class="empty"></span><span class="empty"></span><span
+                  class="empty"></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+                <span>13</span><span>14</span><span>15</span><span
+                  class="today">16</span><span>17</span><span>18</span><span>19</span>
+                <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+                <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+              </div>
+            </div>
+
+            <div class="card events-widget">
+              <h2 class="section-title">Upcoming Events</h2>
+              <div class="event-item">
+                <div class="event-icon"><img src="./image/calender.png" alt="calender logo"></div>
+                <div class="event-details">
+                  <h4>Level-Up Seminar</h4>
+                  <p>May 31 @ 10:00 AM</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event-icon"><img src="image/calender.png" alt="calender logo"></div>
+                <div class="event-details">
+                  <h4>Innovation Fair</h4>
+                  <p>June 13 @ 9:00 AM</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event-icon"><img src="./image/calender.png" alt="calender logo"></div>
+                <div class="event-details">
+                  <h4>College Elections</h4>
+                  <p>June 19 from 8:00 AM to 5:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="responsive.js"></script>
+</body>
+
+</html>

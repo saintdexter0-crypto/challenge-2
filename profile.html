@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCourse - Profile</title>
+  <link rel="icon" href="./image/secure_course_icon.png">
+  <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+  <!-- main container -->
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./image/secure_course_logo.png" alt="logo">
+        </div>
+        <h2>SecureCourse</h2>
+      </div>
+      <!-- side bar -->
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <span class="icon"><img src="./image/symbols_dashboard.png" alt=""></span> Dashboard
+        </a>
+        <a href="./profile.html" class="nav-item active">
+          <span class="icon"><img src="./image/profile.png" alt=""></span> Profile
+        </a>
+        <a href="./registration.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_register-outline.png" alt=""></span> Registration
+        </a>
+        <a href="./timetable.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
+        </a>
+        <a href="./attendance.html" class="nav-item">
+          <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
+        </a>
+      </nav>
+    </aside>
+    <!-- main content -->
+    <main class="main-content">
+      <header class="topbar">
+        <button class="hamburger-btn">☰</button>
+        <div class="spacer"></div>
+        <div class="user-profile-section">
+          <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
+          <div class="profile-menu">
+            <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
+            <div class="profile-info">
+              <span class="name">Kelvin Yeboah</span>
+              <span class="role">Student</span>
+            </div>
+            <span class="dropdown-arrow">⌄</span>
+            <div class="dropdown-content">
+              <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
+              <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
+              <div class="divider"></div>
+              <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content-area">
+        <h1>Profile</h1>
+        <div class="profile-container">
+          <div class="img-background">
+            <img src="./image/Content.png" alt="">
+          </div>
+          <div class="avatar-wrapper">
+            <img src="./image/profile-photo.png" alt="Kelvin Yeboah" class="profile-avatar">
+          </div>
+
+          <div class="user-main-info">
+            <h2 class="user-name">Kelvin Yeboah</h2>
+            <p class="user-handle">@kelvin_yeboah</p>
+            <p class="user-course">Computer Science</p>
+          </div>
+
+          <div class="user-stats">
+            <div class="stat-item">
+              <span class="stat-value">Year 3</span>
+              <span class="stat-label">Current Year</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">8989718</span>
+              <span class="stat-label">Index Number</span>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <div class="section-header">Personal</div>
+            <div class="info-grid personal-grid">
+              <div class="info-item">
+                <span class="label">Surname</span>
+                <span class="value">Yeboah</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Gender</span>
+                <span class="value">Male</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Country</span>
+                <span class="value">Ghana</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Religion</span>
+                <span class="value">Christianity</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Other Names</span>
+                <span class="value">Kelvin</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Date of Birth</span>
+                <span class="value">01/01/2001</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Region</span>
+                <span class="value">Eastern</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section">
+            <div class="section-header">Contact</div>
+            <div class="info-grid contact-grid">
+              <div class="contact-left">
+                <div class="info-item">
+                  <span class="label">Email</span>
+                  <span class="value">kelvin.yeboah@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="label">Mobile Number</span>
+                  <span class="value">0234567891</span>
+                </div>
+                <div class="info-item">
+                  <span class="label">Alternate Mobile Number</span>
+                  <span class="value">0509876543</span>
+                </div>
+              </div>
+              <div class="contact-right">
+                <div class="info-item">
+                  <span class="label">Postal Address</span>
+                  <span class="value address-text">
+                    c/o Kelvin Yeboah<br>
+                    P. O. Box 1122<br>
+                    Koforidua
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="responsive.js"></script>
+</body>
+
+</html>

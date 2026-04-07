@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCourse - Attendance</title>
+  <link rel="stylesheet" href="attendance.css">
+  <link rel="icon" href="./image/secure_course_icon.png">
+</head>
+
+<body>
+  <!-- main container -->
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./image/secure_course_logo.png" alt="logo">
+        </div>
+        <h2>SecureCourse</h2>
+      </div>
+      <!-- side bar -->
+      <nav class="sidebar-nav">
+        <a href="./dashboard.html" class="nav-item">
+          <span class="icon"><img src="./image/symbols_dashboard.png" alt=""></span> Dashboard
+        </a>
+        <a href="./profile.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile
+        </a>
+        <a href="./registration.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_register-outline.png" alt=""></span> Registration
+        </a>
+        <a href="./timetable.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
+        </a>
+        <a href="./attendance.html" class="nav-item active">
+          <span class="icon"><img src="image/attendance.png" alt=""></span> Attendance
+        </a>
+      </nav>
+    </aside>
+    <!-- main content -->
+    <main class="main-content">
+      <header class="topbar">
+        <button class="hamburger-btn">☰</button>
+        <div class="spacer"></div>
+        <div class="user-profile-section">
+          <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
+
+          <div class="profile-menu">
+            <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
+            <div class="profile-info">
+              <span class="name">Kelvin Yeboah</span>
+              <span class="role">Student</span>
+            </div>
+            <span class="dropdown-arrow">⌄</span>
+            <div class="dropdown-content">
+              <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
+              <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
+              <div class="divider"></div>
+              <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <h1 class="page-title">Attendance</h1>
+
+        <div class="attendance-grid">
+
+          <div class="attendance-main">
+            <div class="date-selector">
+              <div class="date-item"><span>13</span><small>Mon</small></div>
+              <div class="date-item"><span>14</span><small>Tue</small></div>
+              <div class="date-item active"><span>15</span><small>Wed</small></div>
+              <div class="date-item"><span>16</span><small>Thu</small></div>
+              <div class="date-item"><span>17</span><small>Fri</small></div>
+              <div class="date-item"><span>18</span><small>Sat</small></div>
+              <div class="date-item"><span>19</span><small>Sun</small></div>
+            </div>
+
+            <h3 class="current-date-title">Wednesday, May 15</h3>
+
+            <div class="log-list">
+              <div class="log-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge present">Present</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Check In Time</span>
+                  <span class="check-time">08:07 AM</span>
+                </div>
+              </div>
+
+              <div class="log-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge present">Present</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Check In Time</span>
+                  <span class="check-time">08:07 AM</span>
+                </div>
+              </div>
+
+              <div class="log-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge absent">Absent</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Check In Time</span>
+                  <span class="check-time">08:07 AM</span>
+                </div>
+              </div>
+
+              <div class="log-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge absent">Absent</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Check In Time</span>
+                  <span class="check-time">08:07 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leave-side">
+            <section class="card-outline leave-section">
+              <h3 class="section-title">Requested Leave</h3>
+              <div class="leave-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge pending">Pending</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Date</span>
+                  <span class="check-time">May 15 - May 20</span>
+                </div>
+              </div>
+
+              <div class="leave-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge approved">Approved</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Date</span>
+                  <span class="check-time">May 15 - May 20</span>
+                </div>
+              </div>
+
+              <div class="leave-card">
+                <div class="log-header">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h4 class="course-name">Circuit Theory</h4>
+                  </div>
+                  <span class="status-badge rejected">Rejected</span>
+                </div>
+                <div class="log-footer">
+                  <span class="check-label">Date</span>
+                  <span class="check-time">May 15 - May 20</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="card-outline apply-section">
+              <h3 class="section-title">Apply Leave</h3>
+              <form class="leave-form">
+                <div class="form-group">
+                  <label>Start Date</label>
+                  <div class="input-with-icon">
+                    <input type="text" value="May 20, 2024" placeholder="Select start date">
+                    <img src="image/calender-attendance.png" alt="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>End Date</label>
+                  <div class="input-with-icon">
+                    <input type="text" value="May 20, 2024">
+                    <img src="image/calender-attendance.png" alt="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Reason for Leave</label>
+                  <textarea placeholder="Enter reason for leave."></textarea>
+                </div>
+              </form>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="responsive.js"></script>
+</body>
+
+</html>

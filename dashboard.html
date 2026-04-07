@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureCourse Dashboard</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <link rel="icon" href="./image/secure_course_logo.png">
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <img src="./image/secure_course_logo.png" alt="logo">
+                </div>
+                <h2>SecureCourse</h2>
+            </div>
+            <!-- side bar -->
+            <nav class="sidebar-nav">
+                <a href="./dashboard.html" class="nav-item active">
+                    <span class="icon"><img src="./image/material-symbols_dashboard.png" alt=""></span> Dashboard
+                </a>
+                <a href="./profile.html" class="nav-item">
+                    <span class="icon"><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile
+                </a>
+                <a href="./registration.html" class="nav-item">
+                    <span class="icon"><img src="./image/mdi_register-outline.png" alt=""></span> Registration
+                </a>
+                <a href="./timetable.html" class="nav-item">
+                    <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
+                </a>
+            </nav>
+        </aside>
+        <!-- main content -->
+        <main class="main-content">
+            <header class="topbar">
+                <button class="hamburger-btn">☰</button>
+                <div class="spacer"></div>
+                <div class="user-profile-section">
+                    <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
+
+                    <div class="profile-menu">
+                        <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
+                        <div class="profile-info">
+                            <span class="name">Kelvin Yeboah</span>
+                            <span class="role">Student</span>
+                        </div>
+                        <span class="dropdown-arrow">⌄</span>
+                        <div class="dropdown-content">
+                            <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span>
+                                Profile</a>
+                            <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change
+                                Password</a>
+                            <div class="divider"></div>
+                            <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+
+                <div class="page-header">
+                    <h1>Dashboard</h1>
+                    <span class="date">Thursday, May 16, 2024</span>
+                </div>
+
+                <section class="stats-row">
+                    <div class="stat-card yellow">
+                        <h3>Total Courses</h3>
+                        <div class="value">07</div>
+                        <p>2 Electives</p>
+                    </div>
+                    <div class="stat-card pink">
+                        <h3>Attendance</h3>
+                        <div class="value">60%</div>
+                        <p class="danger-text">24% Absent</p>
+                    </div>
+                    <div class="stat-card gray">
+                        <h3>Requested Leaves</h3>
+                        <div class="value">17</div>
+                        <p class="info-text">11 Approved</p>
+                    </div>
+                </section>
+
+                <section class="main-grid">
+
+                    <div class="grid-column">
+                        <div class="card classes-card">
+                            <h2 class="card-title">Today's Classes</h2>
+
+                            <h4 class="section-subtitle">Past</h4>
+                            <div class="class-item absent">
+                                <div class="class-info">
+                                    <span class="course-code">CS 162</span>
+                                    <h4>Circuit Theory</h4>
+                                    <span class="room">SF 13</span>
+                                </div>
+                                <div class="class-status">
+                                    <span class="time">8:00 AM</span>
+                                    <span class="status-label">Absent</span>
+                                </div>
+                            </div>
+
+                            <div class="class-item attended">
+                                <div class="class-info">
+                                    <span class="course-code">MATH 124</span>
+                                    <h4>Discrete Math</h4>
+                                    <span class="room">FF 10</span>
+                                </div>
+                                <div class="class-status">
+                                    <span class="time">10:30 AM</span>
+                                    <span class="status-label">Attended</span>
+                                </div>
+                            </div>
+
+                            <h4 class="section-subtitle">Upcoming</h4>
+                            <div class="class-item upcoming">
+                                <div class="class-info">
+                                    <span class="course-code">CS 136</span>
+                                    <h4>Introduction to Web Development</h4>
+                                    <span class="room">SF 12</span>
+                                </div>
+                                <div class="class-status">
+                                    <span class="time">01:00 PM</span>
+                                </div>
+                            </div>
+
+                            <div class="class-item upcoming">
+                                <div class="class-info">
+                                    <span class="course-code">CS 124</span>
+                                    <h4>Computer Architecture</h4>
+                                    <span class="room">SF 20</span>
+                                </div>
+                                <div class="class-status">
+                                    <span class="time">03:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-column">
+
+                        <div class="card dark-card">
+                            <h2 class="card-title text-white">Recent Activity</h2>
+                            <ul class="activity-list">
+                                <li>
+                                    <span class="act-icon"><img src="image/material-symbols_login.png" alt=""></span>
+                                    <div class="act-details">
+                                        <p>Checked in for Discrete Math</p>
+                                        <span>Today, 10:30 AM</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="act-icon"><img src="image/mdi_fingerprint.png" alt=""></span>
+                                    <div class="act-details">
+                                        <p>Completed Biometric Registration</p>
+                                        <span>Today, 10:00 AM</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="act-icon"><img src="image/mdi_account-arrow-right-outline.png"
+                                            alt=""></span>
+                                    <div class="act-details">
+                                        <p>Requested Leave for Circuit Theory</p>
+                                        <span>Yesterday, 01:00 PM</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card tasks-card">
+                            <h2 class="card-title">Tasks</h2>
+
+                            <h4 class="section-subtitle">Priority</h4>
+                            <div class="task-item urgent">
+                                <span class="task-icon text-red"><img src="./image/zondicons_exclamation-solid.png"
+                                        alt=""></span>
+                                <div class="task-details">
+                                    <p class="text-red">Course Registration Pending</p>
+                                    <span>May 13, 09:00 AM</span>
+                                </div>
+                                <span class="arrow"><img src="image/Vector_Arrow.png" alt=""></span>
+                            </div>
+                            <div class="task-item warning">
+                                <span class="task-icon text-orange"><img src="image/Group.png" alt=""></span>
+                                <div class="task-details">
+                                    <p class="text-orange">Biometric Registration Pending</p>
+                                    <span>May 13, 09:00 AM</span>
+                                </div>
+                                <span class="arrow"><img src="./image/Vector_Arrow.png" alt=""></span>
+                            </div>
+
+                            <h4 class="section-subtitle">Other</h4>
+                            <div class="task-item normal">
+                                <span class="task-icon"><img src="image/Vector.png" alt=""></span>
+                                <div class="task-details">
+                                    <p>Check in for CS 162</p>
+                                    <span>May 16, 08:00 AM</span>
+                                </div>
+                                <span class="arrow"><img src="image/Vector_Arrow.png" alt=""></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="responsive.js"></script>
+</body>
+
+</html>

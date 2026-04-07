@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- Base Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 800px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #0000000D;
+  margin: 20px;
+}
+
+/* --- Left Side: Form --- */
+.login-form-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo-container img{
+  width: 60px;
+  height: 60px;
+  left: 307px;
+  border-radius: 8px;
+  gap: 11px;
+}
+
+.logo-container h3{
+  width: 156px;
+  height: 32px;
+  letter-spacing: 0%;
+  size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  top: 257.5px;
+  left: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0E2C75;
+  font-family: "Abril Fatface";
+  font-style: "regular";
+  gap: 32px;
+}
+
+.welcome-text {
+  font-size: 29px;
+  font-weight: 700;
+  color: #0d2159;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* --- Input Styling --- */
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2942;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+/* Interactive: Input Focus */
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px #3b82f61A;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: -12px;
+  margin-bottom: 30px;
+}
+
+.forgot-password a {
+  font-size: 13px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-password a:hover {
+  text-decoration: none;
+}
+
+/* --- Button Styling --- */
+.signin-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #0d2159;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Interactive: Sign In Hover */
+.signin-btn:hover {
+  background-color: #1a3a8a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px #0d215933;
+}
+
+.signin-btn:active {
+  transform: translateY(0);
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.signup-text a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* --- Right Side: Image --- */
+.login-image-side {
+width: 672px;
+height: 960px;
+border-radius: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .login-form-side {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .login-image-side {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+    .form-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+    .login-form-side {
+        padding: 20px;
+    }
+    .welcome-text h1 {
+        font-size: 24px;
+    }
+    .input-group label {
+        font-size: 14px;
+    }
+    .input-group input {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .signin-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .login-image-side {
+        height: 200px;
+    }
+}

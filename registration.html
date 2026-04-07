@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCourse - Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./image/secure_course_icon.png">
+  <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+  <!-- main container -->
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">
+          <img src="./image/secure_course_logo.png" alt="logo">
+        </div>
+        <h2>SecureCourse</h2>
+      </div>
+      <!-- side bar -->
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <span class="icon"><img src="./image/symbols_dashboard.png" alt=""></span> Dashboard
+        </a>
+        <a href="./profile.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile
+        </a>
+        <a href="./registration.html" class="nav-item active">
+          <span class="icon"><img src="./image/registration.png" alt=""></span> Registration
+        </a>
+        <a href="./timetable.html" class="nav-item">
+          <span class="icon"><img src="./image/mdi_timetable.png" alt=""></span> Timetable
+        </a>
+        <a href="#" class="nav-item">
+          <span class="icon"><img src="image/mdi_account-check-outline.png" alt=""></span> Attendance
+        </a>
+      </nav>
+    </aside>
+    <!-- main content -->
+    <main class="main-content">
+      <header class="topbar">
+        <button class="hamburger-btn">☰</button>
+        <div class="spacer"></div>
+        <div class="user-profile-section">
+          <button class="notification-btn"><img src="image/mdi_bell-badge-outline.png" alt=""></button>
+          <div class="profile-menu">
+            <img src="./image/profile-photo.png" alt="Avatar" class="avatar">
+            <div class="profile-info">
+              <span class="name">Kelvin Yeboah</span>
+              <span class="role">Student</span>
+            </div>
+            <span class="dropdown-arrow">⌄</span>
+            <div class="dropdown-content">
+              <a href="#"><span><img src="./image/mdi_account-circle-outline.png" alt=""></span> Profile</a>
+              <a href="#"><span><img src="image/mdi_password-outline.png" alt=""></span> Change Password</a>
+              <div class="divider"></div>
+              <a href="#"><span><img src="image/material-symbols_logout.png" alt=""></span> Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content-area">
+        <h1 class="page-title">Registration</h1>
+        <div class="registration-grid">
+          <section class="card course-section">
+            <div class="section-top-header">
+              <div class="header-titles">
+                <h2 class="section-title">Course Registration</h2>
+                <p class="section-subtitle">Select your courses</p>
+              </div>
+              <img src="./image/select-course.png" alt="">
+            </div>
+            <div class="course-list">
+              <div class="course-card selected">
+                <div class="course-top">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h3 class="course-name">Circuit Theory</h3>
+                  </div>
+                  <div class="custom-checkbox checked">
+                    <img src="./image/select-c.png" alt="">
+                  </div>
+                </div>
+                <div class="course-bottom">
+                  <span class="lecturer-label">Lecturer</span>
+                  <span class="lecturer-name">Dr. Emmanuel Hinneh</span>
+                </div>
+              </div>
+              <div class="course-card selected">
+                <div class="course-top">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h3 class="course-name">Circuit Theory</h3>
+                  </div>
+                  <div class="custom-checkbox checked">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+                <div class="course-bottom">
+                  <span class="lecturer-label">Lecturer</span>
+                  <span class="lecturer-name">Dr. Emmanuel Hinneh</span>
+                </div>
+              </div>
+
+              <div class="course-card">
+                <div class="course-top">
+                  <div class="course-info">
+                    <span class="course-code">CS 162</span>
+                    <h3 class="course-name">Circuit Theory</h3>
+                  </div>
+                  <div class="custom-checkbox"></div>
+                </div>
+                <div class="course-bottom">
+                  <span class="lecturer-label">Lecturer</span>
+                  <span class="lecturer-name">Dr. Emmanuel Hinneh</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="actions-column">
+            <section class="card biometric-section">
+              <h2 class="section-title">Biometric Registration</h2>
+              <div class="action-item face-id-card">
+                <div class="icon-box-blue">
+                  <img src="./image/Familiar face and zone.png" alt="">
+                </div>
+                <div class="action-text">
+                  <h4>Register Face ID</h4>
+                  <p>Face recognition will be used for attendance</p>
+                </div>
+                <img src="./image/arrow-forwardblue.png" alt="" class="arrow-icon">
+              </div>
+            </section>
+
+            <div class="link-cards">
+              <div class="action-item outline-card">
+                <div class="icon-circle">
+                  <img src="./image/Info.png" alt="">
+                </div>
+                <div class="action-text">
+                  <h4>Registration Guidelines</h4>
+                  <p>Read instructions on how to register your courses.</p>
+                </div>
+                <img src="./image/arrow-forwardblue.png" alt="" class="arrow-icon">
+              </div>
+
+              <div class="action-item outline-card">
+                <div class="icon-circle">
+                  <img src="./image/file download.png" alt="">
+                </div>
+                <div class="action-text">
+                  <h4>Get Registration Slip</h4>
+                  <p>Download course registration slip.</p>
+                </div>
+                <img src="./image/arrow-forwardblue.png" alt="" class="arrow-icon">
+              </div>
+
+              <div class="action-item outline-card">
+                <div class="icon-circle">
+                  <img src="./image/preview history.png" alt="">
+                </div>
+                <div class="action-text">
+                  <h4>Previous Registrations</h4>
+                  <p>View and download previous course registrations.</p>
+                </div>
+                <img src="./image/arrow-forwardblue.png" alt="" class="arrow-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="responsive.js"></script>
+</body>
+
+</html>
