@@ -1,314 +1,322 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
-
-.maincontainer{
-   width: fixed(1440px);
-   height: fixed(1024px);
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   padding: 32px;
-   gap: 32px;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-   width: fill(672px);
-   height: fill(960px);
-   border-radius: 8px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding-top: 96px;
-   padding-bottom: 96px;
-   gap: 32px;
+.maincontainer {
+  width: fixed(1440px);
+  height: fixed(1024px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
 }
 
-.logo{
-   width: 156px;
-   height: 103px;
-   border-radius: 8px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+.header {
+  width: fill(672px);
+  height: fill(960px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  gap: 32px;
 }
 
-.logo img{
-   width: 60px;
-   height: 60px;
-   left: 307px;
-   border-radius: 8px;
-   gap: 11px;
+.logo {
+  width: 156px;
+  height: 103px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo h3{
-   width: 156px;
-   height: 32px;
-   letter-spacing: 0%;
-   size: 24px;
-   line-height: 100%;
-   font-weight: 400;
-   top: 257.5px;
-   left: 258px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   color: #0E2C75;
-   font-family: "Abril Fatface";
-   font-style: "regular";
-   gap: 32px;
+.logo img {
+  width: 60px;
+  height: 60px;
+  left: 307px;
+  border-radius: 8px;
+  gap: 11px;
 }
 
-.login_options{
-   width: fill(496px);
-   height: 452px;
-   display: flex;
-   flex-direction: column;
-   padding-top: 16px;
-   padding-bottom: 64px;
-   gap: 48px;
+.logo h3 {
+  width: 156px;
+  height: 32px;
+  letter-spacing: 0%;
+  size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  top: 257.5px;
+  left: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0e2c75;
+  font-family: "Abril Fatface";
+  font-style: "regular";
+  gap: 32px;
 }
 
-.options{
-   width: 306px;
-   height: 72px;
-   gap: 8px;
+.login_options {
+  width: fill(496px);
+  height: 452px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 64px;
+  gap: 48px;
 }
 
-.greetings{
-   width: 118px;
-   height: 40px;
-   font-family: "Poppins";
-   font-weight: 600;
-   font-style: bold;
-   line-height: 100%;
-   letter-spacing: 1%;
-   vertical-align: middle;
-   color: #0B235E;
-   gap: 8px;
+.options {
+  width: 306px;
+  height: 72px;
+  gap: 8px;
 }
 
-.subtitle{
-   width: 306px;
-   height: 24px;
-   font-family: "poppins";
-   font-weight: 400;
-   font-style: "regular";
-   line-height: 100%;
-   letter-spacing: 1%;
-   vertical-align: middle;
-   color: #0B235E;
+.greetings {
+  width: 118px;
+  height: 40px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: bold;
+  line-height: 100%;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  color: #0b235e;
+  gap: 8px;
 }
 
-.student_portal{
-   width: fill(496px);
-   height: hug(118px);
-   border-radius: 8px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-direction: row;
-   padding-top: 32px;
-   padding-right: 16px;
-   padding-bottom: 32px;
-   padding-left: 16px;
-   background-color: #0B235E;
-   border: 1px;
+.subtitle {
+  width: 306px;
+  height: 24px;
+  font-family: "poppins";
+  font-weight: 400;
+  font-style: "regular";
+  line-height: 100%;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  color: #0b235e;
 }
 
-.portal{
-   width: hug(330px);
-   height: hug(54px);
-   border-radius: 8px;
-   padding-right: 16px;
-   padding-left: 16px;
-   gap: 8px;
+.student_portal {
+  width: fill(496px);
+  height: hug(118px);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  background-color: #0b235e;
+  border: 1px;
 }
 
-.card_title{
-   width: 113px;
-   height: 28px;
-   font-family: "poppins";
-   font-weight: 500px;
-   font-style: "medium";
-   line-height: 100%;
-   letter-spacing: 1%;
-   vertical-align: middle;
-   color: #FBFCFE;
+.portal {
+  width: hug(330px);
+  height: hug(54px);
+  border-radius: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  gap: 8px;
 }
 
-.card_content{
-   width: 298px;
-   height: 18px;
-   font-family: "poppins";
-   font-weight: 400px;
-   font-style: "regular";
-   line-height: 100%;
-   letter-spacing: 1%;
-   vertical-align: middle;
-   color: #FBFCFE;
+.card_title {
+  width: 113px;
+  height: 28px;
+  font-family: "poppins";
+  font-weight: 500px;
+  font-style: "medium";
+  line-height: 100%;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  color: #fbfcfe;
 }
 
-.go{
-   width: 48px;
-   height: 48px;
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
+.card_content {
+  width: 298px;
+  height: 18px;
+  font-family: "poppins";
+  font-weight: 400px;
+  font-style: "regular";
+  line-height: 100%;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  color: #fbfcfe;
 }
 
-.student_portal a{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   color: #FBFCFE;
-   text-decoration: none;
+.go {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.staff{
-   width: fill(496px);
-   height: hug(118px);
-   border: 1px;
-   border-radius: 8px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   padding-top: 32px;
-   padding-right: 16px;
-   padding-bottom: 32px;
-   padding-left: 16px;
-   background-color: #D3DFE7;
-   text-decoration: none;
+.student_portal a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fbfcfe;
+  text-decoration: none;
 }
 
-.staff_portal{
-   width: hg(324px);
-   height: hug(54px);
-   border-radius: 8px;
-   right: 16px;
-   left: 16px;
-   gap: 8px;
+.staff {
+  width: fill(496px);
+  height: hug(118px);
+  border: 1px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  background-color: #d3dfe7;
+  text-decoration: none;
 }
 
-.title{
-   width: 67px;
-   height: 28px;
-   font: "poppins";
-   font-weight: 500;
-   font-style: "medium";
-   font-size: 28px;
-   line-height: 100%;
-   letter-spacing: 1%;
-   vertical-align: middle;
-   color: #0B235E;
+.staff_portal {
+  width: hg(324px);
+  height: hug(54px);
+  border-radius: 8px;
+  right: 16px;
+  left: 16px;
+  gap: 8px;
 }
 
-.content{
-   width: 292px;
-   height: 18px;
-   font: "poppins";
-   font-weight: 400px;
-   font-style: "regular";
-   font-size: 18px;
-   line-height: 100%;
-   letter-spacing: 1%;
-   vertical-align: middle;
-   color: #0B235E;
+.title {
+  width: 67px;
+  height: 28px;
+  font: "poppins";
+  font-weight: 500;
+  font-style: "medium";
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  color: #0b235e;
 }
 
-.go_in{
-   width: 48px;
-   height: 48px;
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
+.content {
+  width: 292px;
+  height: 18px;
+  font: "poppins";
+  font-weight: 400px;
+  font-style: "regular";
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  vertical-align: middle;
+  color: #0b235e;
 }
 
-.staff a{
-   width: 14.82px;
-   height: 24px;
-   top: 12px;
-   left: 17.18px;
-   color: #0B235E;
+.go_in {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.login_art{
-   width: fill(672px);
-   height: fill(960px);
+.staff a {
+  width: 14.82px;
+  height: 24px;
+  top: 12px;
+  left: 17.18px;
+  color: #0b235e;
 }
 
-.login_art img{
-   width: 672px;
-   height: 960px;
-   border-radius: 24px;
+.login_art {
+  width: fill(672px);
+  height: fill(960px);
+}
+
+.login_art img {
+  width: 672px;
+  height: 960px;
+  border-radius: 24px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .maincontainer {
-        padding: 20px;
-    }
-    .header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    .login_options {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .student_portal, .staff {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    .portal, .staff_title {
-        padding: 20px;
-    }
-    .card_title, .title {
-        font-size: 20px;
-    }
-    .card_content, .content {
-        font-size: 14px;
-    }
+  .maincontainer {
+    padding: 20px;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .login_options {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .student_portal,
+  .staff {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .portal,
+  .staff_title {
+    padding: 20px;
+  }
+  .card_title,
+  .title {
+    font-size: 20px;
+  }
+  .card_content,
+  .content {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
-    .maincontainer {
-        padding: 10px;
-    }
-    .logo h3 {
-        font-size: 20px;
-    }
-    .greetings {
-        font-size: 24px;
-    }
-    .subtitle {
-        font-size: 16px;
-    }
-    .student_portal, .staff {
-        max-width: 100%;
-    }
-    .portal, .staff_title {
-        padding: 15px;
-    }
-    .go, .go_in {
-        width: 40px;
-        height: 40px;
-    }
-    .go img, .go_in img {
-        width: 20px;
-        height: 20px;
-    }
+  .maincontainer {
+    padding: 10px;
+  }
+  .logo h3 {
+    font-size: 20px;
+  }
+  .greetings {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .student_portal,
+  .staff {
+    max-width: 100%;
+  }
+  .portal,
+  .staff_title {
+    padding: 15px;
+  }
+  .go,
+  .go_in {
+    width: 40px;
+    height: 40px;
+  }
+  .go img,
+  .go_in img {
+    width: 20px;
+    height: 20px;
+  }
 }
