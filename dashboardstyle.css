@@ -483,6 +483,7 @@ body {
 @media (max-width: 1024px) {
   .main-grid {
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
 }
 
